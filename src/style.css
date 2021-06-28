@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  border: 1px solid #ddd;
+  padding: 30px;
+  width: 400px;
+  margin: 50px auto;
+}
+
+
+.row {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=text] {
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
