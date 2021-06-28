@@ -1,5 +1,5 @@
-import Dog from '../Dog/index.js';
-import Fish from '../Fish/index.js';
+import Dog from '../../Entities/Dog/index.js';
+import Fish from '../../Entities/Fish/index.js';
 
 export default class PurchaseService {
   purchase(cart) {
