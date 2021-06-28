@@ -21,6 +21,8 @@
   - PetStoreUI
     - index
     - PetStoreUI.test.js
+  - dummyPets
+    - index.js
   - main.js
   - index.html
   - style.css
