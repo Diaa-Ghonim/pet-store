@@ -1,8 +1,8 @@
 import PetStoreUI from './index.js';
 import { dummyPets } from '../dummyPets/index.js';
-import CartService from '../CartService/index.js';
-import PurchaseService from '../PurchaseSevice/index.js';
-import TransactionRecordService from '../TransacationRecordService/index.js';
+import CartService from '../Domain/Services/CartService/index.js';
+import PurchaseService from '../Domain/Services/PurchaseService/index.js';
+import TransactionRecordService from '../Domain/Services/TransactionRecordService/index.js';
 
 describe('PetStoreUI class', () => {
   let $container;
@@ -24,7 +24,7 @@ describe('PetStoreUI class', () => {
     $content = $container.querySelector('.content');
     $logger = $container.querySelector('.logger');
   });
-  it('should render petsStoreUI and $container elment has content', () => {
+  it('should render petsStoreUI and $container element has content', () => {
     expect($container.innerHTML).not.toBe('');
   });
 
@@ -55,7 +55,7 @@ describe('PetStoreUI class', () => {
     expect($logger.innerHTML).toBe('');
   });
 
-  it('should render report in logger when purchase btn clicked in case of cart values and buyername value', () => {
+  it('should render report in logger when purchase btn clicked in case of cart values and buyerName value', () => {
     let $purchaseBtn = $content.querySelector('.purchase-btn');
     let $cartActionBtns = $content.querySelectorAll('.cart-action-btn');
     expect($cartActionBtns[0].innerHTML).toBe('Add To Cart');
